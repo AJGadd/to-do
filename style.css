@@ -1,0 +1,89 @@
+body {
+	background-color:#5d6a6a;
+    font-family: Arial;
+
+}
+
+.header{
+	text-align: center;
+    border: 1px solid black;
+}
+
+.list{
+	color:#00ffff;
+	font:sans serif;
+	border: 10px #00ffff solid;
+	border-radius:10px;
+	background-color:black;
+	padding:20px;
+	margin:20px;
+	box-shadow: 3px 3px 0 black;
+}
+
+.items{
+	padding-left:0px;
+	margin-left:0px;
+	list-style-type:none;
+}
+
+.items li,
+.input{
+	border:0px;
+	border-bottom: 1px grey dashed;
+	padding: 10px;	
+}
+
+.input{
+    
+    font-size: 1em;
+    font-family: Arial;
+	width:98%;
+    background-color: black;
+    color:#00ffff;
+    padding-bottom:10px;
+    padding-right: 10px;
+}
+
+a{	
+	text-decoration:none;
+}
+
+.items .doneBut:hover, .newUserBut:hover, .logoutBut:hover{
+	opacity:1;
+}
+
+.items .doneBut, .newUserBut, .logoutBut {
+	display:inline-block;
+	color:black;
+	background-color: #00ffff;
+	border-radius:5px;
+	border:1px black solid;
+	padding:0px;
+	opacity:0.5;
+	
+}
+
+.newUserBut, .logoutBut {
+    color: white;
+    float: right;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.input:focus {
+	outline:none;
+}
+
+.items .item.done{
+	
+	text-decoration:line-through;
+}
+
+.submit{
+    
+    margin-top:20px;
+	display:block;
+    width: 100%;
+    background-color: #00ffff;
+    border-radius: 5px;
+}
