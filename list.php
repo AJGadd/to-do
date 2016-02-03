@@ -49,7 +49,11 @@ $list_items = mysqli_query($con,$itemsQuery);
                     <!--check to see if current item is done. if its not then display the "mark as done button" which links to mark.php with $user and $$list_items appended to the url.--> 
                     <?php if(!$list_item['done']):?>
                         <a href = "mark.php?user=<?php echo $user; ?>&item=<?php echo $list_item['id']; ?>" class = "doneBut">Mark as Done?</a>
-                    <?php endif;?>	
+                    <?php else:?>
+                        <a href= "delete.php?item=<?php echo $list_item['id'];?>" class= "delBut">Delete?</a>
+                    <?php endif;?>
+                    
+                          	
                     										
 		        </li>
 
